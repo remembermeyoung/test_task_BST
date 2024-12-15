@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
+from .views import download_file
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('robots/', include('robots.urls')),
+    path('download/', download_file),
 ]
